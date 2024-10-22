@@ -1,0 +1,152 @@
+/* A ORDEM IMPORTA!!!!!! */
+
+*{ /* formatação basica para trabalhar melhor dentor do css*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button{  /* fonte principal */
+    font-family: "Squada One", serif;
+}
+
+body, input, textarea{ /* fonte secundaria  */
+    font-family: "Kanit", serif;
+}
+
+h1{
+    font-size: 45px;
+    margin-left: -63%;
+}
+
+header{ /* coloração e espaçamento do cabeçario */
+    padding: 16px 0;
+    background-color: #933ab7;
+    color: #fff;
+}
+
+header nav li{ /* Alinhando os links e botando margen para melhor acabamento */
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a{ /* Aplicando cores e removendo o ____ dos links do cabeçario */
+    color: #fff;
+    text-decoration: none;
+}
+
+.container { /* limitando a vizualização da pagina (deixa tudo centralizado) */
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container{ /* Centralizando as coisas da pagina (centralizando)*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cat-head{
+    height: 80px;
+}
+
+.cat-list img{ /* Formatando a imagem dos Gatos */
+    height: 150px;
+    width: 230px;
+    cursor: pointer;
+    border-radius: 4%;
+}
+
+.cat-list li{ /* Alinhando as imagens dos gatos */
+    display: inline;
+    margin-right: 30px;
+}
+
+section .container{ /* reescrevendo a regra acima (para começar certinho na pagina) */
+    align-items: flex-start;
+}
+
+section { /* Serve para separar o cabeçario e a parte "Sobre" do site*/
+    padding: 24px 0;
+}
+
+section h2{ /* Serve para dar o espaço entre o titulo e os paragrafos */
+    margin-bottom: 16px;
+}
+
+section p{ /* Serve para dar um espaço entre os paragrafos*/
+    margin-bottom: 8px;
+}
+
+.cat-about{ /* Margem na parte direta da imagem para nao ficar colado no texto ao lado */
+    margin-right: 32px;
+    border-radius: 4%;
+}
+
+.social-links img{ /* O tamanho da imagem da parte "social" */
+    height: 24px;
+}
+
+.social-links li { /* Arrumando os icones (deixando eles em linha) */
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a,
+.cat-list li a{ /* Tirando o pontinho preto de baixo das imagens (Elas ficam com __ por algum motivo) */
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{ /* Arrumando o tamanho da area "Fale conosco" */
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{ /* Tirando a parte movel da area "Sua mensagem" */
+    resize: none;
+    height: 180px;
+}
+
+section h3 { /* Margem para dividir os topicos da parte contato (não fica grudado)*/
+    margin-bottom: 16px;
+}
+
+form button{ /* estilizando o botão */
+    background-color: #933ab7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{ /* estilização do botão (serve para o botão mudar de cor ao colocar o mouse me cima */
+    background-color: #5b2670;
+}
+
+input:focus, textarea:focus{ /* Mudando a borda da parte "fale conosco" */
+    outline-color: #933ab7;
+}
+
+footer { /* Estilizando o rodapé da pagina */
+    background-color: #933ab7;
+    color: #fff;
+    padding: 16px;
+}
