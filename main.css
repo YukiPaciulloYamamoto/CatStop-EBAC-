@@ -103,11 +103,11 @@ section p{ /* Serve para dar um espaço entre os paragrafos*/
     text-decoration: none;
 }
 
-#contact .container{
+#contact .container{ /* Alinha os tópicos de "Contato" */
     display: block;
 }
 
-.contact-methods{
+.contact-methods{ /* Deixa toods os topicos de contato alinhados */
     display: flex;
     justify-content: space-between;
 }
